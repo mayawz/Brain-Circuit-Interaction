@@ -4,7 +4,6 @@
 
 clc; clear all; close all; fclose('all');
 
-% completeFilePath = 'Y:\Isaac\SampleGrapevineData\SampleGrapevineData.nev';
 completeFilePath = 'E:\DropMaze\P20171006\P201710060001.ns5';
 
 
