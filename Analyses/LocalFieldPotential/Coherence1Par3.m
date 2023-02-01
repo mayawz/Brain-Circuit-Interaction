@@ -14,10 +14,10 @@ close all; clear all; clc
 
 % /opt/local/matlab2017b/bin/matlab
 
-addpath(genpath('/home/jeeves-raid2/benh-data/Maze/AR_Sorted/w_Anatomy/chronux_2_12/'))
+addpath(genpath('/###################################################/chronux_2_12/'))
 
-dpath='/home/jeeves-raid2/benh-data/Maze/AR_Sorted/w_Anatomy/2020final/wrapped/';
-fpath='/home/jeeves-raid2/benh-data/Maze/AR_Sorted/w_Anatomy/2020final/code/Coherence/';
+dpath='/###################################################/wrapped/';
+fpath='/###################################################/Coherence/';
 addpath(genpath(fpath))
 cd(dpath)
 
@@ -42,7 +42,7 @@ parfor tt=1:3
     % condN={'SPKin-LFPpcc','SPKout-LFPpcc','SPKpcc-LFPin',...
     % 'SPKpcc-LFPout', 'SPKin-LFPout','SPKout-LFPin'};
     
-    spath='/home/jeeves-raid2/benh-data/Maze/AR_Sorted/w_Anatomy/2020final/results/Coherence/';
+    spath='/###################################################/results/Coherence/';
     
     spkorders=[2 4 6 6 2 4,...
         1 3 5 5 1 3 ,...
@@ -64,14 +64,14 @@ parfor tt=1:3
         'SPKin-LFPpcc','SPKout-LFPpcc','SPKpcc-LFPin',...
         'SPKpcc-LFPout', 'SPKin-LFPout','SPKout-LFPin'};
     
-    spkdpath='/home/jeeves-raid2/benh-data/Maze/AR_Sorted/w_Anatomy/2020final/wrapped/SPKforCoherence/';
+    spkdpath='/###################################################/wrapped/SPKforCoherence/';
     
     cd(spkdpath)
     List_spk=dir( '*SPK*');
     tmp=load(List_spk(spkorders(combinations(tt))).name);
     spk=tmp.spk;
     
-    lfpdpath='/home/jeeves-raid2/benh-data/Maze/AR_Sorted/w_Anatomy/2020final/wrapped/LFPforCohCleaned/';
+    lfpdpath='/###################################################/wrapped/LFPforCohCleaned/';
     
     cd(lfpdpath)
     List_lfp=dir( '*LFP*');
