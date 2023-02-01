@@ -1,3 +1,6 @@
 
 Further transforms local field potential and perform analyses
-Original code relied on heigh performance computing servers
+
+Spetral analyses used the Chronux toolbox
+
+Original codes were run on heigh performance computing servers
