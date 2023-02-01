@@ -8,10 +8,10 @@ close all; clear all; clc
 
 % /opt/local/matlab2017b/bin/matlab
 
-addpath(genpath('/home/jeeves-raid2/benh-data/Maze/AR_Sorted/w_Anatomy/chronux_2_12/'))
+addpath(genpath('####################################################/chronux_2_12/'))
 
-dpath='/home/jeeves-raid2/benh-data/Maze/AR_Sorted/w_Anatomy/2020final/wrapped/';
-fpath='/home/jeeves-raid2/benh-data/Maze/AR_Sorted/w_Anatomy/2020final/code/Coherence/';
+dpath='####################################################/wrapped/';
+fpath='####################################################/Coherence/';
 addpath(genpath(fpath))
 cd(dpath)
 
@@ -23,7 +23,7 @@ cd(dpath)
 %     poolobj=parpool('local',numWorkers);
 % end
 
-lfpdpath='/home/jeeves-raid2/benh-data/Maze/AR_Sorted/w_Anatomy/2020final/wrapped/LFPforCoherence/';
+lfpdpath='###################################################/wrapped/LFPforCoherence/';
 cd(lfpdpath)
 List_lfp=dir( '*LFP*');
 %%
@@ -32,7 +32,7 @@ List_lfp=dir( '*LFP*');
 for combinations=9:10 
 % combinations=2
     
-    spath='/home/jeeves-raid2/benh-data/Maze/AR_Sorted/w_Anatomy/2020final/wrapped/LFPforCohCleaned/';
+    spath='/###################################################/LFPforCohCleaned/';
 
     cd(lfpdpath)
     List_lfp=dir( '*LFP*');
