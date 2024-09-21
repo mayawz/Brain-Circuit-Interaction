@@ -1,4 +1,4 @@
-# Brain_Circuit_Interaction
+# Brain-Circuit-Interaction
 OFC-PCC interaction transforming value comparison to action comparison
 
 The analyses here resulted in the following publication:
